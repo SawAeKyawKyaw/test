@@ -1,3 +1,3 @@
-module.exports.abb = function add(a,b){
+exports.abb = function add (a,b){
     return a+b
 }
