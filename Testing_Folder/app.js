@@ -28,3 +28,25 @@
 // fs.unlink('Testing_Folder/adds.js', function(err){
 //     console.log("Deleted")
 // })
+
+const express = require('express')
+
+const app = express();
+
+app.get('/', function (req, res) {
+    res.send('Hello World')
+})
+
+app.get('/alien', function(req, res){
+    const id = req.query.id
+    res.send('Welcome back Alien ' + id)
+})
+
+app.get('/alien/:id', function(req, res){
+    const i = req.params.id
+    res.send('Hey No. ' + i)
+})
+
+app.listen(3000, function(req, res){
+    console.log('Running')
+})
