@@ -1,0 +1,12 @@
+"use strict";
+let tname;
+tname = "Saw Ae Kyaw Kyaw";
+let uname = tname.toUpperCase();
+console.log(uname);
+let age;
+age = 22.5;
+let n = "233.23";
+let result = parseFloat(n);
+console.log(result);
+let boo;
+console.log(boo);
